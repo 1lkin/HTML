@@ -1,0 +1,125 @@
+<!-- HTML nədir? Strukturundan bəhs edin. Tələbə məlumatlarından ibarət cədvəl yaradın. -->
+<!-- HTML (HyperText Markup Language) veb səhifələrinin yaradılması üçün istifadə edilən əsas işarələmə dili (markup language)-dir. 
+      HTML, veb səhifələrini qurmaq və vizual olaraq brauzerlərdə göstərmək üçün istifadə olunur. HTML səhifələrinin əsas məqsədi 
+      mətn, şəkil, video, formalar və digər məzmun növlərini təşkil etmək və istifadəçilərə təqdim etməkdir.
+
+       
+      HTML səhifələri etiketlər və atributlarla yaradılır. HTML strukturunun ən əsas hissələri və elementləri:
+      <html>, <head>, <body>, <title>, <meta>
+
+-->
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tələbə Məlumat Cədvəli</title>
+  <style>
+    /* Ümumi səhifə üslubu */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Başlıq üslubu */
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    /* Cədvəl üslubu */
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Cədvəlin başlıqları */
+    th {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    /* Cədvəlin cədvəl hüceyrələri */
+    td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Cədvəl hər iki ardıcıl satırı fərqli rəngdə göstərmək */
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    /* Cədvəldə hover effektini tətbiq etmək */
+    tr:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <table>
+  <h1>Tələbə Məlumatları</h1>
+    <thead>
+      <tr>
+        <th>№</th>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Yaş</th>
+        <th>İmtahan Balı</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Əli</td>
+        <td>Hüseynov</td>
+        <td>21</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Ayşe</td>
+        <td>Əliyeva</td>
+        <td>22</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Orxan</td>
+        <td>Quliyev</td>
+        <td>20</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Maral</td>
+        <td>Rzayeva</td>
+        <td>23</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Aysel</td>
+        <td>Məmmədova</td>
+        <td>24</td>
+        <td>91</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
