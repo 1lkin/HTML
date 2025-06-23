@@ -1,0 +1,67 @@
+<!-- Position nədir? Səhifələmə (pagination) hazırlayın. -->
+<!--
+   Position - bir elementin səhifə üzərində necə yerləşdiriləcəyini təyin edir.
+    1. static (default) - Element normal axınla (flow) yerləşir:  
+                  .element {position: static;}
+    2. relative - Element normal axınla yerləşir, amma top, right, bottom, left ilə ona nisbətən yerini dəyişmək olur: 
+                  .element {position: relative; top: 10px; left: 20px;}
+    3.absolute - Element normal axından çıxır və ən yaxın relative (və ya absolute, fixed) positioned valideynə nisbətən yerləşdirilir.
+                 Əgər belə valideyn yoxdursa, bodyyə (və ya html) görə yerləşir: 
+                  .element {position: absolute; top: 0; left: 0;}
+    4.fixed - Brauzer pəncərəsinə (viewport) görə yerləşir, scrollda da, bir yerdə qalır: 
+                  .element {position: fixed; bottom: 10px; right: 10px;}
+    5. sticky - relative və fixed arasında qarışıqdır. Müəyyən bir scroll nöqtəsinə qədər relative, sonra fixed kimi davranır.
+                  .element {position: sticky; top: 0;}
+  
+-->
+<!-- TAPŞIRIĞIN İKİNCİ HİSSƏSİ DƏYİŞİB. POSITION-A AİD NUMUNE LAZIMDIR. -->
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Səhifələmə Nümunəsi</title>
+  <style>
+    .pagination {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .pagination a {
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      margin: 0 4px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .pagination a:hover {
+      background-color: #007bff;
+      color: white;
+      border-color: #007bff;
+    }
+
+    .pagination a.active {
+      background-color: #333;
+      color: white;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pagination">
+    <a href="#">&laquo; Əvvəlki</a>
+    <a href="#">1</a>
+    <a href="#" class="active">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">Növbəti &raquo;</a>
+  </div>
+
+</body>
+</html>
