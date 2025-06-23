@@ -1,0 +1,62 @@
+<!-- Form elementleri nədir? Qeydiyyat formu hazırlayın. -->
+<!--
+  Form elementləri (form tags) - istifadəçidən məlumat almaq üçün istifadə olunur. Məsələn: ad, soyad, parol, seçimlər, mesajlar və s.
+  ✅ Əsas Form Elementləri və İstifadəsi:
+
+| Element                                  | Təyinatı                                                          |
+| ---------------------------------------- | ----------------------------------------------------------------- |
+| `<form>`                                 | Form konteyneridir, bütün giriş elementlərini əhatə edir.         |
+| `<input>`                                | Müxtəlif tipli məlumat daxil etmək üçün (ad, e-mail, şifrə və s.) |
+| `<label>`                                | Giriş sahəsi üçün ad və ya izah verir                             |
+| `<textarea>`                             | Çoxsətirli mətn daxil etmək üçün sahə                             |
+| `<select>` + `<option>`                  | Açılan siyahı (drop-down menu)                                    |
+| `<button>` və ya `<input type="submit">` | Formu göndərmək üçün düymə                                        |
+| `<fieldset>` və `<legend>`               | Formu məntiqi bloklara ayırmaq üçün                               |
+
+
+📌 Əlavə input tipləri:
+
+type="text" – mətn
+type="email" – e-poçt
+type="password" – gizli mətn
+type="checkbox" – seçim qutusu
+type="radio" – birdəfəlik seçim
+type="file" – fayl yükləmə
+type="date" – tarix seçimi
+
+-->
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Nümunəsi</title>
+</head>
+<body>
+
+  <h2>Qeydiyyat Forması</h2>
+
+  <form action="/gonder" method="post">
+    <label for="ad">Ad:</label>
+    <input type="text" id="ad" name="ad"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="parol">Parol:</label>
+    <input type="password" id="parol" name="parol"><br><br>
+
+    <label for="cins">Cins:</label>
+    <select id="cins" name="cins">
+      <option>Kişi</option>
+      <option>Qadın</option>
+    </select><br><br>
+
+    <label for="haqqinda">Haqqında:</label><br>
+    <textarea id="haqqinda" name="haqqinda" rows="4" cols="30"></textarea><br><br>
+
+    <button type="submit">Göndər</button>
+  </form>
+
+</body>
+</html>
