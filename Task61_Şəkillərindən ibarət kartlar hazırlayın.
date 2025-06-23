@@ -1,0 +1,90 @@
+<!-- Şəkillərindən ibarət kartlar hazırlayın. -->
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Məlumat Kartları</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef1f4;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 280px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?nature" alt="Şəkil 1">
+      <div class="card-content">
+        <h3>Təbiət Gözəlliyi</h3>
+        <p>Bu kart təbiətin gözəlliyini əks etdirir. Sakitlik və təmiz hava insanın ruhunu dincəldir.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?technology" alt="Şəkil 2">
+      <div class="card-content">
+        <h3>Texnologiya Dünyası</h3>
+        <p>Gündəlik həyatımızın ayrılmaz hissəsi olan texnologiya daim inkişaf edir və dəyişir.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?city" alt="Şəkil 3">
+      <div class="card-content">
+        <h3>Şəhər Həyatı</h3>
+        <p>Şəhər həyatı daim hərəkətdədir. Dinamiklik və fürsətlərlə dolu bir mühitdir.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
