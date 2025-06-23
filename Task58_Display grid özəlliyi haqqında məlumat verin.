@@ -1,0 +1,80 @@
+<!-- Display grid özəlliyi haqqında məlumat verin. -->
+
+<!--
+    display: grid bir el. grid container-ə çevirir, içindəki uşaqlar grid item olur ve bu itemləri satır və sütun şəklində yerləşdirmək olur.
+| **Grid Container** | `display: grid` verilmiş ana element            |
+| **Grid Item**      | Grid konteynerin birbaşa uşaqları               |
+| **Grid Line**      | Satır və sütunları ayıran xətlər                |
+| **Grid Track**     | İki xətt arasında olan sahə (satır və ya sütun) |
+| **Grid Cell**      | Bir track-ın içindəki hüceyrə                   |
+
+  1. grid-template-columns və grid-template-rows  -  Sütun və satırların sayını və ölçüsünü təyin edir.
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 sütun */
+  grid-template-rows: 100px 200px;    /* 2 satır */
+}
+
+  2. gap  -  Sətir və sütunlar arasında boşluq yaradır (boşluq = margin kimidir, amma grid-ə xasdır).
+
+.container { gap: 20px; }
+
+  3. grid-column və grid-row  -  Elementin hansı sütun/satırda olacağını təyin edir.
+
+.item {
+  grid-column: 1 / 3; /* 1-dən 3-ə qədər (yəni 2 sütun) */
+  grid-row: 1 / 2;
+}
+
+  Sadə Nümunə:
+
+-->
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Nümunəsi</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 100px 100px;
+      gap: 10px;
+      background: #eee;
+      padding: 10px;
+    }
+
+    .item {
+      background: #3498db;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .item1 {
+      grid-column: 1 / 3; /* 1-ci və 2-ci sütunu tutur */
+    }
+
+    .item4 {
+      grid-row: 2 / 3;
+      grid-column: 2 / 4; /* 2-ci və 3-cü sütunu tutur */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item item4">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
+
+</body>
+</html>
