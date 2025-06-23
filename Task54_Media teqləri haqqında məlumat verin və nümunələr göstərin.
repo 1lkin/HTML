@@ -1,0 +1,30 @@
+<!-- Media teqləri haqqında məlumat verin və nümunələr göstərin. -->
+<!--
+  📌 Əsas Media Teqləri:
+
+| ---------- | ----------------------------------------------------------- |
+| `<img>`    | Şəkil (image) əlavə etmək üçün                              |
+                <img src="sekil.jpg" alt="Təsvir" width="300" height="200">
+| ---------- | ----------------------------------------------------------- |
+| `<audio>`  | Səs fayllarını yerləşdirmək üçün                            |
+                <audio controls>
+                  <source src="ses.mp3" type="audio/mpeg">
+                  Brauzer bu səs faylını dəstəkləmir.
+                </audio>
+| ---------- | ----------------------------------------------------------- |
+| `<video>`  | Video fayllarını göstərmək üçün                             |
+                <video width="400" controls>
+                  <source src="video.mp4" type="video/mp4">
+                  Brauzer bu video formatını dəstəkləmir.
+                </video>
+| ---------- | ----------------------------------------------------------- |
+| `<source>` | Audio və video üçün bir neçə mənbə (source) göstərmək üçün  |
+| `<iframe>` | Başqa səhifələri (məsələn, YouTube video) yerləşdirmək üçün |
+                <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        frameborder="0" 
+                        allowfullscreen>
+                </iframe>
+| ---------- | ----------------------------------------------------------- |
+
+-->
