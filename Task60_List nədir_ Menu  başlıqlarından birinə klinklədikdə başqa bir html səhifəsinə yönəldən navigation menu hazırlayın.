@@ -1,0 +1,56 @@
+<!-- List nədir? Menu  başlıqlarından birinə klinklədikdə başqa bir html səhifəsinə yönəldən navigation menu hazırlayın. -->
+<!-- ul,ol,dl.
+
+<dl>
+  <dt>HTML</dt>
+  <dd>Veb səhifələrin struktur dili</dd>
+
+  <dt>CSS</dt>
+  <dd>Veb səhifələrin dizayn dili</dd>
+</dl>
+
+-->
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Ana Səhifə</title>
+  <style>
+    ul.menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #333;
+      display: flex;
+    }
+
+    ul.menu li {
+      margin: 0;
+    }
+
+    ul.menu li a {
+      display: block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    ul.menu li a:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="menu">
+    <li><a href="index.html">Ana Səhifə</a></li>
+    <li><a href="haqqimizda.html">Haqqımızda</a></li>
+    <li><a href="xidmetler.html">Xidmətlər</a></li>
+    <li><a href="elaqe.html">Əlaqə</a></li>
+  </ul>
+
+  <h1>Salam! Bu ana səhifədir.</h1>
+
+</body>
+</html>
