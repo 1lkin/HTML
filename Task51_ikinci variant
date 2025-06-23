@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Tələbə Məlumatları</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    table {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #009879;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #d1f0e2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tələbə Məlumatları</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Ixtisas</th>
+        <th>Qiymət</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Elvin</td>
+        <td>Əliyev</td>
+        <td>İnformasiya Texnologiyaları</td>
+        <td>91</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Günel</td>
+        <td>Hüseynova</td>
+        <td>Riyaziyyat</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Rauf</td>
+        <td>Quliyev</td>
+        <td>Proqramlaşdırma</td>
+        <td>95</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
