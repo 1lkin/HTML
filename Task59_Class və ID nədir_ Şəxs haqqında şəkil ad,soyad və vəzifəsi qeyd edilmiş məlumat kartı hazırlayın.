@@ -1,0 +1,58 @@
+<!-- Class və ID nədir? Şəxs haqqında şəkil ad/soyad və vəzifəsi qeyd edilmiş məlumat kartı hazırlayın.  -->
+<!--  -->
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Məlumat Kartı</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #3498db;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 15px 0 5px;
+    }
+
+    .position {
+      font-size: 16px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://i.pravatar.cc/150?img=3" alt="İstifadəçi şəkli">
+    <div class="name">Elvin Məmmədov</div>
+    <div class="position">Frontend Developer</div>
+  </div>
+
+</body>
+</html>
